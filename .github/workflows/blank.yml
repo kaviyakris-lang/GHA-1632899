@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: print name
         run: |
-          echo "my name is krishna"
+          echo "my name is ${{ vars.NAME }}"
           echo "i am working in ntt data"
           
   deploy:
