@@ -1,8 +1,11 @@
 name: demo
-on: workflow_dispatch
+on: 
+  push:
+    branches:
+      - main
 jobs:
   build:
     runs-on: ubuntu-24.04-arm
     steps:
       - name: print name
-        run: echo "my name is kaviya"
+        run: echo "my name is krishna"
