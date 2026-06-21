@@ -1,11 +1,15 @@
 name: demo
 on: 
-  push:
-    branches:
-      - main
-  pull_request: 
-    branches:
-      - main     
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: choose env
+        required: true
+        type: choice
+        options:
+          - dev
+          - qa
+          - prod
 jobs:
   build:
     runs-on: ubuntu-24.04-arm
