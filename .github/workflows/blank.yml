@@ -20,4 +20,4 @@ jobs:
     needs: build
     steps:
       - name: deploy 
-        run: echo "${{ github.actor }}"
+        run: echo "${{ github.repository }}"
