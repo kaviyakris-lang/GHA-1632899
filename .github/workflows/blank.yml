@@ -14,3 +14,9 @@ jobs:
         run: |
           echo "my name is krishna"
           echo "i am working in ntt data"
+          
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy 
+        run: echo "deploy"
