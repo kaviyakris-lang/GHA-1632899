@@ -8,4 +8,6 @@ jobs:
     runs-on: ubuntu-24.04-arm
     steps:
       - name: print name
-        run: echo "my name is krishna"
+        run: |
+          echo "my name is krishna"
+          echo "i am working in ntt data"
